@@ -3,12 +3,12 @@ package ie.atu.sw;
 public class StringReverser {
 	public String reverse(String s) {
 		
-		String t = "";
+		StringBuilder sb = new StringBuilder();
 		for (int i = s.length() - 1; i >= 0; i--) {
-			t = t + s.charAt(i); //Don't do this inside a loop, inefficient
+			sb.append(s.charAt(i));
 		}
 		
-		return t;
+		return sb.toString();
 	}
 	
 	public static void main(String[] args) {
